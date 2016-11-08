@@ -2,7 +2,231 @@
 @import "sass/vars"
 @import "sass/base"
 
-.header_link
+.b-header
+  padding-top: 18px
+  padding-bottom: 18px
+  display: flex
+  align-items: center
+  max-width: 1100px
+  margin-left: auto
+  margin-right: auto
+  justify-content: space-between
+  padding-left: 25px
+  padding-right: 25px
+
+.b-header__logo
+  float: left
+  width: 190px
+  //width: 15%
+
+.b-header-contact
+  width: 50%
+  text-align: right
+
+.b-link-header
+  display: inline-block
+  line-height: 23px
+  vertical-align: middle
+
+.link__text-icon
+  margin-left: 28px
+
+.link_sample
+  width: 190px
+  margin-right: 60px
+
+.link_calculate
+  width: 140px
+
+.b-header-contact
+  flex-grow: 0
+
+.contact__phone
+  font-size: 18pt
   font-family: OpenSansRegular
+  color: #4d4d4d
+  line-height: 18pt
+
+.contact__time
+  color: $base_color_grey
+  font-size: 11pt
+
+.link__icon
+  color: $base_color_blue
+  font-size: 28px
+  float: left
+  margin-right: 15px
+
+.link_header
+  display: block
+  font-size: 10.5pt
+  line-height: 12pt
+  color: $base_color_grey
+  transition: all ease .3s
+  text-decoration: none!important
+  &:hover
+    color: #4267d6
+
+.b-index-line
+  max-width: 1100px
+  margin-left: auto
+  margin-right: auto
+
+.b-index-line_fullWidth
+  max-width: 1500px
+
+.b-slider-item
+  width: 100%
+  height: 500px
+  background-color: $base_color_blue
+
+.b-slider__text
+  padding-top: 100px
+  font-size: 30pt
+  color: #ffffff
+  max-width: 600px
+  padding-left: 15px
+  padding-right: 15px
+
+.b-btn
+  font-weight: bold
+  font-size: 11pt
+  color: #ffffff
+  line-height: 11pt
+  padding: 20px 20px
+  display: inline-block
+  cursor: pointer
+  transition: all ease .3s
+
+
+.b-btn_slider
+  margin-top: 15px
+  margin-left: 15px
+  position: relative
+  background-color: rgba(255, 255, 255, 0.3)
+  &:hover
+    background-color: #213778
+
+.owl-nav
+  font-family: Icomoon
+  color: #ffffff
+  font-size: 15px
+  width: 100%
+  position: absolute
+  top: 46%
+  .owl-prev
+    left: 53px
+    position: absolute
+    border: solid 1px #fff
+    padding: 22px 25px
+    border-radius: 10em
+    &:before
+      content: "\e905"
+  .owl-next
+    right: 53px
+    position: absolute
+    border: solid 1px #fff
+    padding: 22px 25px
+    border-radius: 10em
+    &:before
+      content: "\e906"
+
+  .owl-prev, .owl-next
+    transition: all ease .3s
+    &:hover
+      color: #666666
+      background-color: #ffffff
+
+.b-nav
+  display: flex
+  justify-content: space-between
+
+.b-nav-item
+  margin-top: -112px
+  position: relative
+  z-index: 23
+  width: 198px
+  height: 255px
+  background-color: #4a84f0
+  margin-bottom: 50px
+  padding-top: 56px
+  padding-left: 27px
+  &:before
+    content: ''
+    position: absolute
+    right: -57px
+    top: 0
+    border-width: 57px 0px 198px 57px
+    border-color: transparent #4a84f0 #4a84f0 #4a84f0
+    line-height: 0px
+    width: 0px
+    height: 0px
+    border-style: solid
+
+.b-nav-item_order2
+  background-color: #4267D6
+  &:before
+    border-color: transparent #4267D6 #4267D6 #4267D6
+
+.b-nav-item_order3
+  background-color: #304EAB
+  &:before
+    border-color: transparent #304EAB #304EAB #304EAB
+
+.b-nav-item_order4
+  background-color: #213778
+  &:before
+    border-color: transparent #213778 #213778 #213778
+
+.b-nav-item__caption
+  font-size: 18pt
+  color: #ffffff
+  position: relative
+  display: inline-block
+  &:after
+    content: "\e908"
+    font-family: Icomoon
+    color: #ffffff
+    top: 10px
+    right: -20px
+    font-size: 12px
+    position: absolute
+
+.b-nav-list
+  text-decoration: none
+  list-style-type: none
+  color: #ffffff !important
+  padding-left: 0
+  margin-left: 0
+
+.b-nav-list__link
+  color: #ffffff !important
+  position: relative
+  display: inline-block
+  display: inline-block
+  margin-bottom: 3px
+  text-decoration: none !important
+  transition: all ease .3s
+  &:after
+    content: "\e908"
+    font-family: Icomoon
+    color: #ffffff
+    visibility: hidden
+    top: 7px
+    right: -12px
+    font-size: 7px
+    position: absolute
+  &:hover
+    margin-left: 7px
+    &:after
+      visibility: visible
+
+.link_UPC
+  &:after
+    top: 6px
+
+
+
+
 
 //First screen styles
