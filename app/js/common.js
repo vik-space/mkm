@@ -12,4 +12,20 @@ $(function() {
         navText: [,]
     });
 
+    $(".popup").magnificPopup();
+
+    $('.counter-up').counterUp({time: 2000,});
+
+    $("#phone").inputmask("+7 (999) 99-99-999");
+
+
+    $('.advantages-item').click(function () {
+        var head_list = $(this).children(".advantages-item__description");
+        $(".advantages-item__description").slideUp('normal');
+        if ($(head_list).css("display") == "block") {
+            $(head_list).slideUp('normal');
+        } else {
+            $(head_list).slideDown('normal');
+        }
+    });
 });
