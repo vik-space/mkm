@@ -1,0 +1,227 @@
+//Верхнее меню старт
+.nav-item_not_index
+  margin-top: 5px
+  padding: 25px
+  padding-top: 16px
+  padding-bottom: 0
+  height: auto
+
+.nav-list_not_index
+  margin-top: 0
+  transition: all ease .3s
+  height: 0
+  opacity: 0
+
+.b-nav_not_index
+  position: absolute
+  left: 0
+  right: 0
+  align-items: flex-start
+
+.nav-item_not_index
+  width: 255px
+  &:before
+    right: -35px
+    top: 0
+    border-width: 22px 0 0px 36px
+    border-color: #fff #4a84f0 #4a84f0 #4a84f0
+    right: 0
+
+.nav-item_not_index.b-nav-item_order2
+  background-color: #4267D6
+  &:before
+    border-color: #fff #4267D6 #4267D6 #4267D6
+
+.nav-item_not_index.b-nav-item_order3
+  background-color: #304EAB
+  &:before
+    border-color: #fff #304EAB #304EAB #304EAB
+
+.nav-item_not_index.b-nav-item_order4
+  background-color: #213778
+  &:before
+    border-color: #fff #213778 #213778 #213778
+
+.nav-item__caption_not_index
+  cursor: pointer
+  font-size: 12pt
+  &:after
+    top: 3px
+
+.nav-item_not_index:hover>.nav-list_not_index
+  height: auto
+  margin-top: 15px
+  opacity: 1
+  
+//Верхнее меню конец
+
+//Банер вверху страницы начало
+.b-banner-header
+  padding-top: 140px
+  margin-top: 70px
+  background-image: url(/img/window_pvh.jpg)
+  height: 500px
+  background-position: center center
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+
+.banner-header__title
+  max-width: 550px
+  font-size: 30pt
+  color: #fff
+  margin-bottom: 20px
+
+.btn_dark_blue
+  display: block
+  background-color: #213778
+  transition: all ease .3s
+  width: 180px
+  padding-left: 0
+  padding-right: 0
+  text-align: center
+  &:hover
+    background-color: #4267d6
+
+.b-bread-crumbs
+  margin-bottom: 54px
+  margin-top: 28px
+
+.bread-crumbs__item
+  a
+    color: #4d4d4d
+    text-decoration: none
+
+.bread-crumbs__item_IndexPage
+  margin-right: 3px
+  display: block
+  float: left
+  a
+   color: $base_color_blue
+
+//Банер вверху страницы конец
+
+//Популярные решения старт flex
+
+.b-popular-solutions_flex
+  display: flex !important
+  justify-content: space-between
+  margin-bottom: 80px !important
+
+.popular-solutions__item
+  width: 30%
+  position: relative
+
+.b-solutions-item__title
+  color: #4a84f0
+  font-size: 18pt
+  margin-bottom: 20px
+
+.solutions-item-card
+  color: #666666
+  font-size: 11.3pt
+  border: 1px #CCCCCC solid
+  border-bottom: none
+  position: relative
+  margin-bottom: 190px
+
+.solutions-item-card__image
+  height: 290px
+  text-align: center
+  padding-left: 10px
+  padding-right: 10px
+  img
+    padding-top: 20px
+    display: inline-block
+    max-width: 100%
+
+.solutions-item-card-description
+  background-color: rgba(243, 244, 246, 0.8)
+  position: absolute
+  left: -1px
+  right: -1px
+  border: 1px #CCCCCC solid
+  border-top: none
+  padding-top: 20px
+  padding-right: 30px
+  padding-left: 30px
+  padding-bottom: 70px
+
+.solutions-item-card__price
+  span
+    display: block
+    color: $base_color_blue
+    font-size: 24pt
+    margin-top: 5px
+    margin-bottom: 5px
+
+.btn-card
+  position: absolute
+  bottom: -215px
+  left: 50%
+  margin-left: -72px
+  width: 145px
+  text-align: center
+
+.btn-blue
+  background-color: $base_color_blue
+  &:hover
+    background-color: #304eab
+
+//Популярные решения конец flex
+
+.b-content-category
+  margin-bottom: 45px
+
+.b-advantages_category
+  border-top: #E6E6E6 1px solid
+  border-bottom: #E6E6E6 1px solid
+  padding-top: 65px
+  padding-bottom: 30px !important
+
+//Форма остались вопросы начало
+.b-form-asc
+  margin-top: 50px
+  margin-bottom: 50px
+  display: block
+  background-position: center center
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  background-image: url(/img/ask.jpg)
+  padding-top: 50px
+  padding-left: 60px
+  padding-bottom: 35px
+
+.form-asc__title
+  color: #ffffff
+  font-size: 24pt
+  margin-bottom: 10px
+
+.form-asc__subtitle
+  font-size: 12.8pt
+  color: #ffffff
+  margin-bottom: 35px
+
+.line-form-footer_asc
+  width: 285px
+  margin-bottom: 15px
+  input
+    min-width: 285px
+
+.FeedBack-item
+  display: block
+  float: left
+  margin-bottom: 10px
+  margin-right: 25px
+
+textarea#comment
+  max-width: 340px
+  width: 340px
+  height: 97px
+
+.b-btn_asc
+  margin-left: 48.5%;
+  display: block
+  margin-top: 25px !important
+//Форма остались вопросы конец

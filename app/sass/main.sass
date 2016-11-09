@@ -1,6 +1,8 @@
 @import "bourbon"
 @import "vars"
 @import "libs"
+@import "goods"
+
 
 .b-row-list-service
   display: flex
@@ -483,6 +485,12 @@
   font-size: 10.5pt
   margin-bottom: 25px
 
+a.little-letter_news
+  font-size: 11pt
+  color: $base_color_blue
+  text-transform: lowercase
+  text-decoration: none
+
 //Новости и компания конец
 
 //Слайдер внизу страницы и форма начало
@@ -493,8 +501,8 @@
   width: 100%
   position: relative
   padding-bottom: 80px
-  padding-left: 20px
-  padding-right: 20px
+  //padding-left: 20px
+  //padding-right: 20px
 
 .caption_slider-footer
   position: absolute
@@ -573,7 +581,7 @@
 
 input
   //height: 40px
-  padding: 6px 20px
+  padding: 10px 20px
   color: #4d4d4d
   max-width: 240px
   border-radius: 2px
@@ -591,6 +599,7 @@ label
 
 textarea
   width: 100%
+  padding: 10px 20px
   max-width: 308px
   height: 69px
   border-radius: 2px
@@ -643,9 +652,11 @@ textarea
     margin-left: 7px
     color: #b3b3b3 !important
     font-size: 24px
+    text-decoration: none !important
 
 .logoWebest-webest
   vertical-align: text-top
+
 
 .footer-nav__caption
   text-transform: uppercase
