@@ -28,4 +28,14 @@ $(function() {
             $(head_list).slideDown('normal');
         }
     });
+
+    $('.vacancies-item__arr').click(function () {
+        var head_list = $(this).parent().children(".vacancies-item__hidden");
+        $(".vacancies-item__hidden").slideUp('normal');
+        if ($(head_list).css("display") == "block") {
+            $(head_list).slideUp('normal');
+        } else {
+            $(head_list).slideDown('normal');
+        }
+    });
 });
