@@ -2,6 +2,671 @@
 @import "vars"
 @import "libs"
 
-//Custom styles here
+.b-row-list-service
+  display: flex
+  justify-content: space-between
+  margin-bottom: 20px
 
+.b-index-line__caption
+  font-size: 18pt
+  text-transform: uppercase
+  margin-bottom: 29px
+
+.b-service
+  margin-bottom: 80px
+
+.item__service
+  width: 344px
+  height: 87px
+  line-height: 90px
+  vertical-align: middle
+  cursor: pointer
+
+.service__icon
+  position: relative
+  height: 90px
+  width: 87px
+  color: #666666
+  transition: all ease .3s
+  font-size: 40px
+  line-height: 90px
+  vertical-align: middle
+  position: absolute
+  left: 0
+  top: 0
+  background-color: #dde0e6
+  text-align: center
+  &:after
+    left: 100%
+    top: 50%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+    border-color: rgba(221, 224, 230, 0)
+    border-left-color: #DDE0E6
+    border-width: 9px
+    margin-top: -9px
+
+
+.service__text
+  position: relative
+  padding-left: 115px
+  text-transform: uppercase
+  color: #808080
+  transition: all ease .3s
+  font-size: 14pt
+  background-color: #f0f0f0
+  &:hover
+    color: #213778 !important
+
+.service__text:hover .service__icon
+  color: #213778 !important
+
+
+/*Популярные решения начало
+
+.b-popular-solutions
+  margin-bottom: 50px
+  position: relative
+  display: inline-block
+  width: 100%
+
+.decision-text-header
+  font-size: 18pt
+  color: #4A84F0
+
+.decision-1
+  border: 2px solid #CCCCCC
+  width: 344px
+  height: 460px
+  margin-right: auto
+  margin-left: auto
+  background-image: url("/img/1.jpg")
+  background-repeat: no-repeat
+  position: relative
+
+.decision-2
+  border: 2px solid #CCCCCC
+  width: 344px
+  height: 460px
+  margin-right: auto
+  margin-left: auto
+  background-image: url("/img/2.jpg")
+  background-repeat: no-repeat
+  position: relative
+
+.decision-3
+  border: 2px solid #CCCCCC
+  width: 344px
+  height: 460px
+  margin-right: auto
+  margin-left: auto
+  background-image: url("/img/3.jpg")
+  background-repeat: no-repeat
+  position: relative
+
+.decision-text
+  position: absolute
+  top: 300px
+  left: 30px
+  z-index: 102
+
+.decision-bottom-color
+  position: absolute
+  width: 342px
+  height: 175px
+  background-color: #E6E8ED
+  opacity: 0.5
+  bottom: -1px
+  left: -1px
+  z-index: 100
+
+.price
+  font-size: 11pt
+  color: #666666
+
+.sum
+  font-size: 24pt
+  color: #4A84F0
+  margin-top: 0px
+  margin-bottom: 0px
+  line-height: 0.5
+
+.size
+  font-size: 11pt
+  color: #666666
+
+#payt1, #payt2, #payt3
+  display: none
+
+[for="payt1"], [for="payt2"], [for="payt3"]
+  position: relative
+  display: block
+  width: 85px
+  height: 16px
+  padding: 0px
+  border: 1px solid #999999
+  border-radius: 50px
+  line-height: 10px
+  color: #999999
+  cursor: pointer
+
+[for="payt1"]:before, [for="payt2"]:before, [for="payt3"]:before
+  content: ""
+  position: absolute
+  right: 15px
+  color: #000
+
+[for="payt1"]:after, [for="payt2"]:after, [for="payt3"]:after
+  content: ""
+  position: absolute
+  left: 2px
+  top: 2px
+  display: block
+  width: 40px
+  height: 10px
+  border-radius: 50px
+  background: #999999
+  transition: .5s
+
+#payt1:checked ~ [for="payt1"]:after, #payt2:checked ~ [for="payt2"]:after, #payt3:checked ~ [for="payt3"]:after
+  left: 41px
+  background: #4A84F0
+
+.decision-button-block
+  text-align: center
+  margin-top: 30px
+
+.decision-button
+  padding: 15px 35px
+  text-decoration: none
+  color: #fff
+  background-color: #4A84F0
+  font-size: 11pt
+  transition: all ease .3s
+  text-transform: uppercase
+  position: absolute
+  bottom: -75px
+  left: 50%
+  margin-left: -76px
+  font-family: OpenSansBold
+  &:hover
+    text-decoration: none
+    color: #fff
+    background-color: $base_hover_blue
+
+/*Популярные решения конец
+
+
+
+//Расрочка начало
+
+.b-credit
+  display: block
+  height: 350px
+  width: 100%
+  margin-bottom: 60px
+  position: relative
+  background-image: url(/img/credit.jpg)
+  margin-top: 70px
+  background-position: center center
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  padding-top: 50px
+  padding-bottom: 50px
+
+
+.b-credit-line
+  position: absolute
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  padding-left: 70px
+  padding-right: 70px
+  width: 100%
+
+.credit-line_bottom
+  bottom: 50px
+
+.b-credit__caption
+  font-size: 40pt
+  line-height: 40pt
+  color: #ffffff
+  width: 340px
+
+.b-btn_gold
+  background-color: #ffbf00
+  &:hover
+    background-color: #F5A300
+
+.b-credit-item-uslovija
+  display: flex
+  align-items: flex-end
+  border: solid 2px #fff
+  border-radius: 3px
+
+.uslovija__value
+  font-size: 30pt
+  padding: 10px 15px
+  font-family: OpenSansBold
+  color: #304eab
+  font-weight: bold
+  display: inline-block
+  border-right: solid 2px #fff
+
+.little-letter
+  font-size: 18pt
+
+.item-uslovija__title
+  padding-left: 25px
+  margin-bottom: 10px
+  font-size: 18pt
+  color: #ffffff
+  font-weight: bold
+  padding-right: 22px
+
+//Расрочка Конец
+
+//Как мы работаем начало
+.b-work-line
+  display: flex
+  justify-content: space-between
+  padding-bottom: 50px
+
+
+.b-work__item
+  width: 25%
+  padding: 35px 25px
+  background-color: #f0f0f0
+  position: relative
+  &:after
+    left: 100%
+    top: 50%
+    z-index: 1
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+    border-color: rgba(221, 224, 230, 0)
+    border-left-color: #f0f0f0
+    border-width: 15px
+    margin-top: -15px
+
+.b-work-item_order2
+  background-color: #DDE0E6
+  &:after
+    z-index: 2
+    border-left-color: #DDE0E6
+
+
+.b-work-item_order3
+  background-color: #CED2DB
+  &:after
+    z-index: 3
+    border-left-color: #CED2DB
+
+.b-work-item_order4
+  .work-item__title
+    color: #ffffff
+  .work__item__description
+    color: #ffffff
+  background-color: #304EAB
+  &:after
+    border-left-color: transparent
+
+.work-item__title
+  color: #4267d6
+  text-transform: uppercase
+  font-size: 18pt
+  margin-bottom: 25px
+
+.work__item__description
+  color: #4d4d4d
+  max-width: 200px
+//Как мы работаем конец
+
+//Счётчик на главной начало
+.b-number
+  border-bottom: 1px solid #E6E6E6
+  border-top: 1px solid #E6E6E6
+  background-image: url(/img/bgi_line.png)
+  display: flex
+  background-position: center
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  height: 473px
+  width: 100%
+  justify-content: space-around
+  align-items: center
+  margin-bottom: 60px
+
+.b-number-item
+  background-image: url(/img/circle1.png)
+  background-position: center
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  display: block
+  width: 250px
+  height: 250px
+  position: relative
+
+.number-item_order-2
+  background-image: url(/img/cirle2.png)
+  .number-item__value
+    right: -80px
+
+.number-item_order-3
+  background-image: url(/img/circle3.png)
+  .number-item__value
+    right: -100px
+
+.number-item__value
+  position: absolute
+  right: -28px
+  font-family: OpenSansBold
+  top: 18%
+  font-size: 99pt !important
+  line-height: 99pt !important
+  color: transparent
+  //font-size: 400%
+  //line-height: 100%
+  //background: linear-gradient(#243C80, #4479DE)
+  //-webkit-background-clip: text
+  color: #243C80
+
+.number-item__description
+  color: #1a1a1a
+  font-family: OpenSansRegular
+  font-weight: normal
+  font-size: 18pt
+  line-height: 20pt
+
+//Счётчик на главной конец
+
+
+//Наши преимущества начало
+.caption_center
+  text-align: center
+
+.b-advantages
+  padding-bottom: 65px
+  border-bottom: 1px solid #E6E6E6
+.b-advantages-line
+  display: flex
+  justify-content: space-between
+  padding-bottom: 30px
+
+.advantages-item
+  width: 182px
+  text-align: center
+  cursor: pointer
+  &:after
+    font-family: Icomoon
+    font-size: 9px
+    color: #4a84f0
+    content: '\e904'
+
+.advantages-item:hover .advantages-item__icon
+  color: #365fb6
+
+.advantages-item__icon
+  font-size: 56px
+  color: #b3b3b3
+  transition: all ease .3s
+
+.advantages-item__title
+  font-size: 12pt
+  font-family: OpenSansBold
+  color: #4d4d4d
+  height: 43px
+
+.advantages-item__description
+  display: none
+  color: #4d4d4d
+  font-size: 10.5pt
+  margin-top: 15px
+
+
+//Наши преимущества конец
+
+//Новости и компания начало
+
+.b-news-company
+  margin-top: 70px
+  display: flex
+  justify-content: space-between
+  width: 100%
+  margin-bottom: 75px
+
+.b-news-list
+  padding-right: 25px
+  width: 50%
+
+.b-about-company
+  width: 50%
+
+.b-news-item
+  margin-top: 40px
+
+.news-item__title
+  color: #4d4d4d
+  font-size: 14pt
+
+.news-item__title
+  a
+    color: #4d4d4d
+    text-decoration: none
+    transition: all ease .3s
+    &:hover
+      border-bottom: 1px solid #4A84F0
+
+.news-item__date
+  color: #4a84f0
+  font-size: 10pt
+  margin-top: 15px
+  margin-bottom: 15px
+
+
+.news-item__description
+  color: #4d4d4d
+  font-size: 10.5pt
+
+.b-p-text
+  font-size: 10.5pt
+  margin-bottom: 25px
+
+//Новости и компания конец
+
+//Слайдер внизу страницы и форма начало
+
+.b-slider-mit-form
+  display: flex
+  justify-content: space-between
+  width: 100%
+  position: relative
+  padding-bottom: 80px
+  padding-left: 20px
+  padding-right: 20px
+
+.caption_slider-footer
+  position: absolute
+  z-index: 120
+  top: 40px
+  left: 40px
+
+.b-slider_footer
+  width: 48% !important
+  .owl-nav
+    font-family: Icomoon
+    color: #999
+    bottom: 40px
+    height: 70px
+    top: auto
+    .owl-prev
+      border: solid 1px #999
+    .owl-next
+      border: solid 1px #999
+    .owl-prev, .owl-next
+      &:hover
+        border: solid 1px #ffffff
+
+.b-slider-item_footer
+  width: 100%
+  background-color: #fff
+  height: 550px
+
+.b-content-footer-slider
+  padding-top: 140px
+  padding-left: 40px
+  padding-right: 40px
+
+.b-content-footer-slider
+  width: 100%
+  height: 100%
+  background-position: center
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+
+.footer-slider__name
+  color: #4d4d4d
+  font-size: 16pt
+  margin-bottom: 5px
+
+.footer-slider__profession
+  color: #4267d6
+  font-size: 10.5pt
+
+.b-form-footer-page
+  width: 49%
+  background-image: url(/img/line.jpg)
+  background-position: center
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  padding: 33px
+  padding-top: 20px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.b-btn_w145
+  width: 145px
+  text-align: center
+
+.form-footer__title
+  max-width: 240px
+  color: #fff
+  text-transform: uppercase
+  font-size: 24pt
+
+.line-form-footer
+  //height: 40px
+
+input
+  //height: 40px
+  padding: 6px 20px
+  color: #4d4d4d
+  max-width: 240px
+  border-radius: 2px
+  border: none
+  outline: none !important
+
+label
+  color: #ffffff
+  width: 80px
+  display: inline-block
+
+.label_textarea
+  display: block
+  margin-bottom: 10px
+
+textarea
+  width: 100%
+  max-width: 308px
+  height: 69px
+  border-radius: 2px
+  border: none
+  outline: none !important
+
+//footer start
+.b-footer
+  padding-top: 15px
+  border-top: 1px solid #E6E6E6
+
+.b-header_for_footer>div
+  width: 25%
+
+.b-header_for_footer
+  padding-bottom: 0
+
+.b-link-header_footer
+  width: 180px !important
+
+.b-footer-nav
+  padding-top: 25px
+  padding-left: 15px
+  padding-right: 15px
+  background-color: #f0f0f0
+  padding-bottom: 10px
+
+
+.index-line_footer_nav
+  display: flex
+  justify-content: space-between
+
+.copy__block
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.copy_block__organisation
+  max-width: 240px
+  color: #999999
+  font-size: 10pt
+  margin-top: 25px
+
+.copy_block__webest
+  color: #b3b3b3
+  display: flex
+  height: 26px
+  margin-bottom: 10px
+  a
+    margin-left: 7px
+    color: #b3b3b3 !important
+    font-size: 24px
+
+.logoWebest-webest
+  vertical-align: text-top
+
+.footer-nav__caption
+  text-transform: uppercase
+  color: #4d4d4d
+  font-family: OpenSansBold
+  font-size: 10.5pt
+
+
+.footer-nav-list
+  padding-left: 0
+  li
+    list-style-type: none
+  a
+    color: #4d4d4d
+    transition: all ease .1s
+    font-size: 10pt
+    text-decoration: none
+    &:hover
+      color: #4a84f0
+//footer end
+
+
+//Слайдер внизу страницы и форма конец
 @import "media"

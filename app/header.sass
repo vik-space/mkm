@@ -72,6 +72,7 @@
   margin-left: auto
   margin-right: auto
 
+
 .b-index-line_fullWidth
   max-width: 1500px
 
@@ -79,6 +80,10 @@
   width: 100%
   height: 500px
   background-color: $base_color_blue
+  background-position: center
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
 
 .b-slider__text
   padding-top: 100px
@@ -95,8 +100,10 @@
   line-height: 11pt
   padding: 20px 20px
   display: inline-block
+  font-family: OpenSansBold
   cursor: pointer
   transition: all ease .3s
+  height: 53px
 
 
 .b-btn_slider
@@ -140,6 +147,7 @@
 .b-nav
   display: flex
   justify-content: space-between
+  margin-bottom: 80px
 
 .b-nav-item
   margin-top: -112px
@@ -148,7 +156,6 @@
   width: 198px
   height: 255px
   background-color: #4a84f0
-  margin-bottom: 50px
   padding-top: 56px
   padding-left: 27px
   &:before
