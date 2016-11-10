@@ -1,5 +1,17 @@
 $(function () {
 
+    $('.b-slider_indexHeader').owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        autoplaySpeed: 1500,
+        navText: [,]
+    });
+
     $('.b-slider').owlCarousel({
         items: 1,
         nav: true,
@@ -56,10 +68,13 @@ $(function () {
         var WindowName = $(this).parent().attr("data-windowName");
         var WindowPrice = $(this).parent().attr("data-windowPrice");
         var SizeValueOrderWindow = $(this).parent().attr("data-windowSize");
+        var WindowImg = $(this).parent().attr("data-windowImg");
+        console.log(WindowImg);
 
         $("#b-order-window .window-name").text(WindowName);
         $("#b-order-window .window__price").text(WindowPrice);
         $("#b-order-window .size__value_OrderWindow").text(SizeValueOrderWindow);
+        $("#b-order-window .white_OrderWindow img").attr("src", WindowImg);
     });
 
 
