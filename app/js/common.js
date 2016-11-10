@@ -51,6 +51,18 @@ $(function () {
         $("#b-contact-map .popup__phone_map").text(PopupPhoneMap);
         $("#b-contact-map .b-popup-white_map iframe").attr("src", LinkForMap);
     });
+
+    $(".js-window-popup").click(function () {
+        var WindowName = $(this).parent().attr("data-windowName");
+        var WindowPrice = $(this).parent().attr("data-windowPrice");
+        var SizeValueOrderWindow = $(this).parent().attr("data-windowSize");
+
+        $("#b-order-window .window-name").text(WindowName);
+        $("#b-order-window .window__price").text(WindowPrice);
+        $("#b-order-window .size__value_OrderWindow").text(SizeValueOrderWindow);
+    });
+
+
     $(window).resize(function () {
 
         //setEqualHeight($(".b-page-contact>.b-page-contact-column"));
