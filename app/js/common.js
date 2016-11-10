@@ -18,6 +18,8 @@ $(function () {
 
     $("#phone").inputmask("+7 (999) 99-99-999");
 
+    $(".popup_phone_input").inputmask("+7 (999) 99-99-999");
+
 
     $('.advantages-item').click(function () {
         var head_list = $(this).children(".advantages-item__description");
