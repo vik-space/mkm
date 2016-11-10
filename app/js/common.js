@@ -40,51 +40,53 @@ $(function () {
     });
 
 
+    $(".date_map_popup").click(function () {
+        var PopupCaptionMap = $(this).attr("date-title");
+        var LinkForMap = $(this).attr("data-item");
+        var PopupPhoneMap = $(this).attr("date-phone");
+
+        $("#b-contact-map .popup__mapTitle").text(PopupCaptionMap);
+        $("#b-contact-map .popup__phone_map").text(PopupPhoneMap);
+        $("#b-contact-map .b-popup-white_map iframe").attr("src", LinkForMap);
+    });
+    $(window).resize(function () {
+
+        //setEqualHeight($(".b-page-contact>.b-page-contact-column"));
+        $(".b-page-contact-column-feed-back").height($(".b-page-contact-column").height() + 300);
+
+    });
 
 
-    if (document.documentElement.clientWidth > 992) {
+    // Прилипание блока Форма обратной связи
+    $('#FeedBackForm').scroolly([
+        {
+            to: 'con-top',
+            css:{
+                top:'0',
+                bottom: '',
+                position: 'absolute'
+            }
+        },
+        {
+            from: 'con-top',
+            to: 'con-bottom - 100el = vp-top',
+            css:{
+                top: '20px',
+                bottom: '',
+                position: 'fixed'
 
-        // вычисление и задание высоты контейнера, в котором находится зафиксированный блок
-        setEqualHeight($(".b-page-contact>.b-page-contact-column"));
-
-        function getTopOffset(e) {
-            var y = 0;
-            do {
-                y += e.offsetTop;
-            } while (e = e.offsetParent);
-            return y;
-        }
-
-        var block = document.getElementsByClassName('fix_block');
-
-        /* fix_block - значение атрибута id блока */
-        if (null != block) {
-            var topPos = getTopOffset(block);
-            console.log(topPos);
-
-            window.onscroll = function () {
-                var scrollHeight = Math.max(document.documentElement.scrollHeight, document.documentElement.clientHeight),
-
-                    // определяем высоту блока в котором находится fix_block
-                    blockHeight = block.offsetHeight,
-
-                    // вычисляем высоту контейнера с id = stop, места фиксации блока
-                    footerHeight = document.getElementById('stop').offsetHeight,
-
-                    // считаем позицию, до которой блок будет зафиксирован
-                    stopPos = scrollHeight - blockHeight - footerHeight - 90 - 110;
-
-                var newcss = (topPos < window.pageYOffset) ?
-                    'top:0px; position: fixed;  padding-right: 15px' : 'position:relative;';
-
-                if (window.pageYOffset > stopPos)
-                    newcss = 'position:absolute; bottom: 320px;  padding-right: 15px';
-
-                block.setAttribute('style', newcss);
+            }
+        },
+        {
+            from: 'con-bottom - 100el = vp-top',
+            css:{
+                top: '',
+                bottom: '0',
+                position: 'absolute'
             }
         }
+    ], $('#stickem-container'));
 
-    }
 
 
 //Функция вычисления и присваивания заданным колонкам одинаковой высоты

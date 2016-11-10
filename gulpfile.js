@@ -59,6 +59,7 @@ gulp.task('libs', function() {
 		'app/libs/Counter-Up/jquery.counterup.min.js',
 		'app/libs/magnific-popup/jquery.magnific-popup.min.js',
 		'app/libs/inputmask/jquery.inputmask.js',
+		'app/libs/Scroolly/dist/jquery.scroolly.min.js',
 		// 'app/libs/magnific-popup/magnific-popup.min.js'
 		])
 		.pipe(concat('libs.min.js'))
