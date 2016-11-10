@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
     $('.b-slider').owlCarousel({
         items: 1,
@@ -38,4 +38,66 @@ $(function() {
             $(head_list).slideDown('normal');
         }
     });
+
+
+
+
+    if (document.documentElement.clientWidth > 992) {
+
+        // вычисление и задание высоты контейнера, в котором находится зафиксированный блок
+        setEqualHeight($(".b-page-contact>.b-page-contact-column"));
+
+        function getTopOffset(e) {
+            var y = 0;
+            do {
+                y += e.offsetTop;
+            } while (e = e.offsetParent);
+            return y;
+        }
+
+        var block = document.getElementsByClassName('fix_block');
+
+        /* fix_block - значение атрибута id блока */
+        if (null != block) {
+            var topPos = getTopOffset(block);
+            console.log(topPos);
+
+            window.onscroll = function () {
+                var scrollHeight = Math.max(document.documentElement.scrollHeight, document.documentElement.clientHeight),
+
+                    // определяем высоту блока в котором находится fix_block
+                    blockHeight = block.offsetHeight,
+
+                    // вычисляем высоту контейнера с id = stop, места фиксации блока
+                    footerHeight = document.getElementById('stop').offsetHeight,
+
+                    // считаем позицию, до которой блок будет зафиксирован
+                    stopPos = scrollHeight - blockHeight - footerHeight - 90 - 110;
+
+                var newcss = (topPos < window.pageYOffset) ?
+                    'top:0px; position: fixed;  padding-right: 15px' : 'position:relative;';
+
+                if (window.pageYOffset > stopPos)
+                    newcss = 'position:absolute; bottom: 320px;  padding-right: 15px';
+
+                block.setAttribute('style', newcss);
+            }
+        }
+
+    }
+
+
+//Функция вычисления и присваивания заданным колонкам одинаковой высоты
+    function setEqualHeight(columns) {
+        var tallestcolumn = 0;
+        columns.each(
+            function () {
+                currentHeight = $(this).height();
+                if (currentHeight > tallestcolumn) {
+                    tallestcolumn = currentHeight;
+                }
+            }
+        );
+        columns.height(tallestcolumn);
+    }
 });
