@@ -78,43 +78,65 @@ $(function () {
     });
 
 
-    $(window).resize(function () {
-
-        //setEqualHeight($(".b-page-contact>.b-page-contact-column"));
+    scroollyFeedBackForm();
+    if ($(window).width() > 1200) {
         $(".b-page-contact-column-feed-back").height($(".b-page-contact-column").height() + 300);
+    }else{
+        $(".b-page-contact-column-feed-back").height("auto");
+    }
 
+    $(window).resize(function () {
+        if ($(window).width() > 1200) {
+            $(".b-page-contact-column-feed-back").height($(".b-page-contact-column").height() + 300);
+        }else{
+            $(".b-page-contact-column-feed-back").height("auto");
+        }
+        scroollyFeedBackForm();
     });
 
 
     // Прилипание блока Форма обратной связи
-    $('#FeedBackForm').scroolly([
-        {
-            to: 'con-top',
-            css:{
-                top:'0',
-                bottom: '',
-                position: 'absolute'
-            }
-        },
-        {
-            from: 'con-top',
-            to: 'con-bottom - 100el = vp-top',
-            css:{
-                top: '20px',
-                bottom: '',
-                position: 'fixed'
 
-            }
-        },
-        {
-            from: 'con-bottom - 100el = vp-top',
-            css:{
-                top: '',
-                bottom: '0',
-                position: 'absolute'
-            }
+    function scroollyFeedBackForm() {
+
+        if ($(window).width() > 1200) {
+            $("#FeedBackForm").removeClass("removeFix");
+            $("#stickem-container").removeClass("removeFixContainer");
+            $('#FeedBackForm').scroolly([
+                {
+                    to: 'con-top',
+                    css: {
+                        top: '0',
+                        bottom: '',
+                        position: 'absolute'
+                    }
+                },
+                {
+                    from: 'con-top',
+                    to: 'con-bottom - 100el = vp-top',
+                    css: {
+                        top: '20px',
+                        bottom: '',
+                        position: 'fixed'
+
+                    }
+                },
+                {
+                    from: 'con-bottom - 100el = vp-top',
+                    css: {
+                        top: '',
+                        bottom: '0',
+                        position: 'absolute'
+                    }
+                }
+            ], $('#stickem-container'));
+        }else{
+            $("#FeedBackForm").addClass("removeFix");
+            $("#stickem-container").addClass("removeFixContainer");
+
         }
-    ], $('#stickem-container'));
+
+    }
 
 
 
