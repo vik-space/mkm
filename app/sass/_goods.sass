@@ -21,26 +21,31 @@
 .nav-item_not_index
   width: 255px
   &:before
-    right: -35px
+    transform: rotate(180deg)
+    content: ''
+    position: absolute
     top: 0
+    width: 100%
+    height: 0px
+    border-style: solid
     border-width: 22px 0 0px 36px
-    border-color: #fff #4a84f0 #4a84f0 #4a84f0
-    right: 0
+    border-color: #4a84f0 #4a84f0 #fff #fff
+    right: 56px
 
 .nav-item_not_index.b-nav-item_order2
   background-color: #4267D6
   &:before
-    border-color: #fff #4267D6 #4267D6 #4267D6
+    border-color: #4267D6 #4267D6 #fff #fff
 
 .nav-item_not_index.b-nav-item_order3
   background-color: #304EAB
   &:before
-    border-color: #fff #304EAB #304EAB #304EAB
+    border-color: #304EAB #304EAB #fff #fff
 
 .nav-item_not_index.b-nav-item_order4
   background-color: #213778
   &:before
-    border-color: #fff #213778 #213778 #213778
+    border-color: #213778 #213778 #fff #fff
 
 .nav-item__caption_not_index
   cursor: pointer

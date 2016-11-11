@@ -147,6 +147,15 @@
     margin-bottom: 15px
     margin-top: 15px
 
+  .nav-item_not_index
+    position: relative
+    width: 25%
+
+
+  .b-form-asc
+    margin-left: -20px
+    margin-right: -20px
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -203,7 +212,6 @@
     order: 3
     margin-top: 15px
 
-
   .b-header-contact__footer
     width: 100% !important
     order: 4
@@ -225,18 +233,44 @@
   .uslovija__value
     width: 84px
 
+  .index-line_footer_nav
+    flex-wrap: wrap
+
+  .footer-nav-column
+    width: 50%
+
   .copy__block
     order: 4
-
-  .index-line_footer_nav
-    flex-direction: column
-
-  .copy__block
-    flex-direction: row
-    align-content: flex-end
+    justify-content: flex-start
+    //flex-direction: row
+    //align-content: flex-end
 
   .copy_block__organisation
     margin-top: 0
+    width: 100%
+    max-width: 100%
+    margin-bottom: 25px
+
+@media only screen and (max-width : 640px)
+  .nav-item_not_index
+    width: 100%
+
+  .nav-item_not_index.b-nav-item_order2
+    &:before
+      border-color: #4267D6 #4267D6 #4a84f0 #4a84f0
+
+  .nav-item_not_index.b-nav-item_order3
+    &:before
+      border-color: #304EAB #304EAB #4267D6 #4267D6
+
+  .nav-item_not_index.b-nav-item_order4
+    &:before
+      border-color: #213778 #213778 #304EAB #304EAB
+
+  .b-banner-header
+    margin-top: 200px
+    padding-top: 40px
+
 
 @media only screen and (max-width : 500px)
   .b-credit
@@ -279,6 +313,8 @@
   .advantages-item
     width: 100%
     margin-bottom: 25px
+    padding-left: 10px
+    padding-right: 10px
 
   .b-slider_footer
     width: 100% !important
@@ -312,6 +348,26 @@
   .copy_block__organisation
     max-width: 100%
     margin-bottom: 20px
+
+  .footer-nav-column
+    width: 100%
+
+  .b-form-asc
+    padding-left: 20px
+    padding-right: 10px
+
+  textarea#comment
+    width: 285px !important
+
+  .b-btn_asc
+    margin-left: auto
+    margin-right: auto
+
+
+  .FeedBack-item
+    margin-left: auto
+    margin-right: auto
+    float: none
 
 
 
