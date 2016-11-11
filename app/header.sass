@@ -175,44 +175,46 @@ a.decision-button
   display: flex
   justify-content: space-between
   margin-bottom: 80px
-  margin-left: -25px
-  padding-right: 35px
 
 .b-nav-item
-  margin-top: -112px
+  margin-top: -55px
   position: relative
   z-index: 23
-  width: 198px
-  height: 255px
+  width: 255px
+  height: 198px
   background-color: #4a84f0
-  padding-top: 56px
+  //padding-top: 56px
   padding-left: 27px
   &:before
     content: ''
     position: absolute
-    right: -57px
-    top: 0
-    border-width: 57px 0px 198px 57px
-    border-color: transparent #4a84f0 #4a84f0 #4a84f0
-    line-height: 0px
-    width: 0px
-    height: 0px
-    border-style: solid
+    right: 0
+    top: -56px
+    border-bottom: 57px solid #4a84f0
+    border-right: 57px solid transparent
+    height: 57px
+    width: 100%
+    position: absolute
+    left: 0
+    top: -57px
 
 .b-nav-item_order2
   background-color: #4267D6
   &:before
-    border-color: transparent #4267D6 #4267D6 #4267D6
+    border-bottom: 57px solid #4267D6
+    border-right: 57px solid transparent
 
 .b-nav-item_order3
   background-color: #304EAB
   &:before
-    border-color: transparent #304EAB #304EAB #304EAB
+    border-bottom: 57px solid #304EAB
+    border-right: 57px solid transparent
 
 .b-nav-item_order4
   background-color: #213778
   &:before
-    border-color: transparent #213778 #213778 #213778
+    border-bottom: 57px solid #213778
+    border-right: 57px solid transparent
 
 .b-nav-item__caption
   font-size: 18pt
@@ -259,7 +261,6 @@ a.decision-button
 
 .b-index-line_slide_nav
   position: relative
-  max-width: 1056px
 .link_UPC
   &:after
     top: 6px
