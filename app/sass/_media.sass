@@ -303,14 +303,30 @@
     flex-wrap: wrap
 
   .b-popup-white_map
-    width: 90%
+    width: 100%
+    padding-left: 0!important
+    padding-right: 0!important
     height: calc(100vh - 200px)
+    order: 2
 
   .b-popup-dark_map
     display: inline-block
-    width: 90%
+    width: 100%
     height: auto
     padding-top: 20px
+    order: 1
+
+  #b-order-window
+    flex-wrap: wrap
+
+  .white_OrderWindow
+    order: 1
+    width: 100%
+    height: 250px
+
+  .dark_OrderWindow
+    order: 2
+    width: 100%
 
   .mfp-close
     right: -5% !important
@@ -340,6 +356,11 @@
 
   .news-item__title
     margin-top: 40px
+
+  .mfp-close-btn-in .mfp-close
+    color: $base_color_blue !important
+    opacity:  1 !important
+    right: 0 !important
 
 @media only screen and (max-width : 640px)
   .nav-item_not_index
@@ -374,6 +395,13 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+  .b-popup-white, .b-popup-dark
+    padding-left: 25px
+    padding-right: 25px
+
+  .popup__input
+    width: 70%
+
   .b-header>div
     width: 100% !important
     text-align: left
@@ -490,6 +518,9 @@
   .b-current-news-content
     padding-left: 15px
     padding-right: 15px
+
+  .window__price
+    font-size: 17pt !important
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
