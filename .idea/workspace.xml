@@ -10,10 +10,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/Готовые страницы/news.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/Готовые страницы/vacancies.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/header.min.css" afterPath="$PROJECT_DIR$/app/header.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/common.js" afterPath="$PROJECT_DIR$/app/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_base.sass" afterPath="$PROJECT_DIR$/app/sass/_base.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_contact.sass" afterPath="$PROJECT_DIR$/app/sass/_contact.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_media.sass" afterPath="$PROJECT_DIR$/app/sass/_media.sass" />
     </list>
     <ignored path="mkm.iws" />
@@ -48,8 +44,9 @@
       <file leaf-file-name="_media.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="279" column="12" selection-start-line="279" selection-start-column="12" selection-end-line="279" selection-end-column="12" />
+            <state relative-caret-position="643">
+              <caret line="454" column="17" selection-start-line="454" selection-start-column="17" selection-end-line="454" selection-end-column="17" />
+              <caret line="455" column="18" selection-start-line="455" selection-start-column="18" selection-end-line="455" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -74,18 +71,6 @@
             <state relative-caret-position="293">
               <caret line="200" column="6" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_goods.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/sass/_goods.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
-              <folding>
-                <marker date="1478856705721" expanded="true" signature="2:20" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -256,9 +241,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1359" />
+    <option name="x" value="1293" />
     <option name="y" value="44" />
-    <option name="width" value="1874" />
+    <option name="width" value="1940" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -361,15 +346,15 @@
       <workItem from="1478584616588" duration="28033000" />
       <workItem from="1478668023070" duration="27879000" />
       <workItem from="1478752658378" duration="27785000" />
-      <workItem from="1478841326998" duration="18739000" />
+      <workItem from="1478841326998" duration="20124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102436000" />
+    <option name="totallyTimeSpent" value="103821000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1359" y="44" width="1874" height="1096" extended-state="0" />
+    <frame x="1293" y="44" width="1940" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1648291" sideWeight="0.526971" order="1" side_tool="true" content_ui="tabs" />
@@ -719,6 +704,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/header.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/_goods.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -726,14 +719,6 @@
           <folding>
             <marker date="1478856705721" expanded="true" signature="2:20" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/header.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,8 +732,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="279" column="12" selection-start-line="279" selection-start-column="12" selection-end-line="279" selection-end-column="12" />
+        <state relative-caret-position="643">
+          <caret line="454" column="17" selection-start-line="454" selection-start-column="17" selection-end-line="454" selection-end-column="17" />
+          <caret line="455" column="18" selection-start-line="455" selection-start-column="18" selection-end-line="455" selection-end-column="18" />
           <folding />
         </state>
       </provider>
