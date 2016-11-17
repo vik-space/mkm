@@ -53,11 +53,11 @@
 
 	<!-- Custom Browsers Color Start -->
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#4a84f0">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#4a84f0">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#4a84f0">
 	<!-- Custom Browsers Color End -->
 
 </head>
@@ -78,7 +78,7 @@
 
 	<div class="b-link-header link_calculate">
 		<div class="link__icon icon-2"></div>
-		<a href="#" class="link link_header ">
+		<a href="#b-calcul-form" class="link link_header popup">
 			Рассчитать стоимость
 		</a>
 	</div>
@@ -208,7 +208,7 @@
 	<div class="b-index-line__caption">
 		популярные решения
 	</div>
-	<div class="b-popular-solutions b-popular-solutions_flex">
+	<div class=" b-popular-solutions_flex">
 
 		<div class="popular-solutions__item">
 			<div class="b-solutions-item__title">
@@ -231,10 +231,11 @@
 				   data-windowName="Двухстворчатое окно"
 				   data-windowPrice="11 500 Р"
 				   data-windowSize="1000x1400 мм"
+				   data-windowImg="img/1.jpg"
 				>
-					<div class="b-btn btn-card btn-blue js-window-popup">
+					<span class="b-btn btn-card btn-blue js-window-popup">
 						ЗАКАЗАТЬ
-					</div>
+					</span>
 				</a>
 			</div>
 		</div>
@@ -260,10 +261,11 @@
 				   data-windowName="Трехстворчатое окно"
 				   data-windowPrice="15 980 Р"
 				   data-windowSize="1300x1400 мм"
+				   data-windowImg="img/2.jpg"
 				>
-					<div class="b-btn btn-card btn-blue js-window-popup">
+					<span class="b-btn btn-card btn-blue js-window-popup">
 						ЗАКАЗАТЬ
-					</div>
+					</span>
 				</a>
 			</div>
 		</div>
@@ -289,10 +291,11 @@
 				   data-windowName="Балконный блок"
 				   data-windowPrice="25 500 Р"
 				   data-windowSize="1300x1900 мм"
+				   data-windowImg="img/3.jpg"
 				>
-					<div class="b-btn btn-card btn-blue js-window-popup">
+					<span class="b-btn btn-card btn-blue js-window-popup">
 						ЗАКАЗАТЬ
-					</div>
+					</span>
 				</a>
 			</div>
 		</div>
@@ -341,7 +344,7 @@
 
 </div>
 
-<div class="b-index-line">
+<div class="b-index-line media_full_width">
 	<div class="b-work">
 		<div class="b-index-line__caption">
 			СХЕМА РАБОТЫ
@@ -393,7 +396,7 @@
 </div>
 
 <div class="b-index-line">
-	<div class="b-advantages b-advantages_category">
+	<div class="b-advantages">
 		<div class="b-index-line__caption caption_center">
 			ВАШИ ПРЕИМУЩЕСТВА
 		</div>
@@ -454,25 +457,10 @@
 				</div>
 			</div>
 
-		</div>
-
-		<div class="b-advantages-line">
-
-			<div class="advantages-item">
-				<div class="advantages-item__icon icon-15"></div>
-				<div class="advantages-item__title">
-					Собственное производство
-				</div>
-				<div class="advantages-item__description">
-					Вы получаете окна от производителя с завода,
-					оснащенного лучшим автоматизированным оборудованием.
-				</div>
-			</div>
-
 			<div class="advantages-item">
 				<div class="advantages-item__icon icon-16"></div>
 				<div class="advantages-item__title">
-					Сертифицированные комплектующие
+					Любая конфигурация
 				</div>
 				<div class="advantages-item__description">
 					Вы получаете окна от производителя с завода,
@@ -481,9 +469,9 @@
 			</div>
 
 			<div class="advantages-item">
-				<div class="advantages-item__icon icon-11"></div>
+				<div class="advantages-item__icon icon-10"></div>
 				<div class="advantages-item__title">
-					Оперативный монтаж
+					Большой ассортимент
 				</div>
 				<div class="advantages-item__description">
 					Вы получаете окна от производителя с завода,
@@ -492,9 +480,9 @@
 			</div>
 
 			<div class="advantages-item">
-				<div class="advantages-item__icon icon-17"></div>
+				<div class="advantages-item__icon icon-22"></div>
 				<div class="advantages-item__title">
-					Гарантия качества
+					Минимальный срок производства
 				</div>
 				<div class="advantages-item__description">
 					Вы получаете окна от производителя с завода,
@@ -503,9 +491,20 @@
 			</div>
 
 			<div class="advantages-item">
-				<div class="advantages-item__icon icon-18"></div>
+				<div class="advantages-item__icon icon-23"></div>
 				<div class="advantages-item__title">
-					Доступные цены
+					Гибкая система скидок
+				</div>
+				<div class="advantages-item__description">
+					Вы получаете окна от производителя с завода,
+					оснащенного лучшим автоматизированным оборудованием.
+				</div>
+			</div>
+
+			<div class="advantages-item">
+				<div class="advantages-item__icon icon-24"></div>
+				<div class="advantages-item__title">
+					Полный спектр услуг
 				</div>
 				<div class="advantages-item__description">
 					Вы получаете окна от производителя с завода,
@@ -564,7 +563,7 @@
 
 		<div class="b-link-header link_calculate b-link-header_footer">
 			<div class="link__icon icon-2"></div>
-			<a href="#" class="link link_header ">
+			<a href="#b-calcul-form" class="link link_header popup ">
 				Рассчитать стоимость
 			</a>
 		</div>
@@ -583,11 +582,10 @@
 
 			<div class="footer-nav-column copy__block">
 				<div class="copy_block__organisation">
-					© 2016 "МКМ строй" - г. Череповец,
-					Волоколамское шоссе, д.73
+					© 2016 "МКМ строй" - Вологодская область, г. Череповец, ул.Держинского, д.49, офис 1
 				</div>
 				<div class="copy_block__webest">
-						<div class="text">разработка</div>
+					<div class="text">разработка</div>
 					<a target="_blank" href="https://wbest.ru/?utm_source=site-client&utm_medium=banner&utm_campaign=wbest&utm_content=mkm">
 						<span class="logoWebest-webest"></span>
 					</a>
@@ -642,6 +640,7 @@
 				</ul>
 			</div>
 
+
 			<div class="footer-nav-column ">
 				<div class="footer-nav__caption">
 					УСЛУГИ
@@ -649,32 +648,32 @@
 				<ul class="footer-nav-list">
 					<li>
 						<a href="#">
-							Раздвижные двери
+							Установка окон
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Пластиковые двери
+							Остекление балконов
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Перегородки
+							Сервисная служба
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Противопожарные перегородки
+							Вызов Замерщика
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Сетки
+							Вывоз мусора
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Фурнитура
+							Отделка
 						</a>
 					</li>
 				</ul>
@@ -687,44 +686,25 @@
 				<ul class="footer-nav-list">
 					<li>
 						<a href="#">
-							Пластиковые окна
+							О компании
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Стеклопакеты
+							Новости и акции
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Раздвижные двери
+							Вакансии
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Пластиковые двери
+							Дилерам
 						</a>
 					</li>
-					<li>
-						<a href="#">
-							Перегородки
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Противопожарные перегородки
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Сетки
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Фурнитура
-						</a>
-					</li>
+
 				</ul>
 			</div>
 
@@ -734,6 +714,40 @@
 </footer>
 
 <div class="b-hidden">
+
+	<form class="b-popup" id="b-calcul-form">
+		<div class="b-popup-white ">
+			<div class="popup__caption">
+				Рассчитать стоимость
+			</div>
+			<div class="feed-back-form__description b-popup_description">
+				Заполните данные:
+			</div>
+			<div class="line-form-footer">
+				<label for="calcul-form-name" class="popup__label">Имя</label>
+				<input type="text" class="name popup__input" id="calcul-form-name">
+			</div>
+
+			<div class="line-form-footer">
+				<label for="phone-calcul-form-name" class="popup__label">Телефон</label>
+				<input type="text" id="phone-calcul-form-name" class="name popup__input popup_phone_input"placeholder="+7 (___) ___-__-__">
+			</div>
+
+			<div class="line-form-footer">
+				<label for="calcul-form-time" class="popup__label">Время</label>
+				<input type="time" value="00:00" class="name popup__input" id="calcul-form-time" >
+			</div>
+		</div>
+		<div class="b-popup-dark">
+			<div class="line-form-footer">
+				<textarea name="comment" class="popup__texarea" placeholder="Комментарий"></textarea>
+			</div>
+
+			<div class="b-btn b-btn_w145 btn_dark_blue btn_center" type="submit">
+				ОТПРАВИТЬ
+			</div>
+		</div>
+	</form>
 
 	<div class="b-popup popup_width693" id="b-contact-map">
 		<div class="b-popup-white b-popup-white_map">
@@ -764,11 +778,11 @@
 				ЗАЯВКА НА БЕСПЛАТНЫЙ ЗАМЕР
 			</div>
 			<div class="feed-back-form__description b-popup_description">
-				Задайте вопрос нашему менеджеру:
+				Заполните данные:
 			</div>
 			<div class="line-form-footer">
-				<label for="name" class="popup__label">Имя</label>
-				<input type="text" class="name popup__input" id="name">
+				<label for="measurement-name" class="popup__label">Имя</label>
+				<input type="text" class="name popup__input" id="measurement-name">
 			</div>
 
 			<div class="line-form-footer">
@@ -777,8 +791,8 @@
 			</div>
 
 			<div class="line-form-footer">
-				<label for="time" class="popup__label">Время</label>
-				<input type="time" value="00:00" class="name popup__input" id="time" >
+				<label for="measurement-time" class="popup__label">Время</label>
+				<input type="time" value="00:00" class="name popup__input" id="measurement-time" >
 			</div>
 		</div>
 		<div class="b-popup-dark">
@@ -795,20 +809,20 @@
 
 	<form class="b-popup" id="b-ApplicationForPlasticWindows">
 		<div class="b-popup-white ">
-			<div class="popup__caption ">
+			<div class="popup__caption">
 				ЗАЯВКА НА ПЛАСТИКОВЫЕ ОКНА
 			</div>
 			<div class="feed-back-form__description b-popup_description">
 				Заполните данные:
 			</div>
 			<div class="line-form-footer">
-				<label for="name" class="popup__label">Имя</label>
-				<input type="text" class="name popup__input" id="name">
+				<label for="ApplicationForPlasticWindows-name" class="popup__label">Имя</label>
+				<input type="text" class="name popup__input" id="ApplicationForPlasticWindows-name">
 			</div>
 
 			<div class="line-form-footer">
-				<label for="PhoneApplic" class="popup__label">Телефон</label>
-				<input type="text"  id="PhoneApplic" class="name popup__input popup_phone_input"placeholder="+7 (___) ___-__-__">
+				<label for="ApplicationForPlasticWindows-phone" class="popup__label">Телефон</label>
+				<input type="text"  id="ApplicationForPlasticWindows-phone" class="name popup__input popup_phone_input"placeholder="+7 (___) ___-__-__">
 			</div>
 		</div>
 		<div class="b-popup-dark">
@@ -828,33 +842,33 @@
 			<img src="img/1.jpg" alt="Изображение окна">
 		</div>
 		<div class="b-popup-dark b-popup-dark_map dark_OrderWindow">
-			<div class="popup__caption window-name">
-
+			<div class="popup__caption">
+				ОКНО ДВУХСТВОРЧАТОЕ
 			</div>
 			<div class="order-window__price">
 				<div class="solutions-item-card__price">
 					Цена от
-					<span class="window__price"></span>
+					<span>11 500 Р</span>
 				</div>
 				<div class="solutions-item-card__size card__size_OrderWindow">
 					Размер
-					<span class="size__value_OrderWindow"></span>
+					<span class="size__value_OrderWindow">1300x1400 мм</span>
 				</div>
 			</div>
 			<div class="feed-back-form__description b-popup_description">
 				Заполните данные:
 			</div>
 			<div class="line-form-footer">
-				<label for="name" class="popup__label">Имя</label>
-				<input type="text" class="input_order-window" id="name">
+				<label for="order-window-name" class="popup__label">Имя</label>
+				<input type="text" class="input_order-window" id="order-window-name">
 			</div>
 
 			<div class="line-form-footer">
-				<label for="PhoneApplic" class="popup__label">Телефон</label>
-				<input type="text" id="PhoneApplic" class="name input_order-window popup_phone_input"
+				<label for="order-window-Applic" class="popup__label">Телефон</label>
+				<input type="text" id="order-window-Applic" class="name input_order-window popup_phone_input"
 					   placeholder="+7 (___) ___-__-__">
 			</div>
-			<div class="b-btn b-btn_w145 btn_dark_blue" type="submit" style="margin-left: auto; margin-top: 15px;">
+			<div class="b-btn b-btn_w145 btn_dark_blue" type="submit" style="margin-left: auto;">
 				ЗАКАЗАТЬ
 			</div>
 		</div>

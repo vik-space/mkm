@@ -2,6 +2,25 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1340px)
+  .b-slider_indexHeader
+    .owl-nav
+      .owl-prev
+        left: 5px
+      .owl-next
+        right: 5px
+
+
+@media only screen and (max-width : 1225px)
+  .b-slider_indexHeader
+    .owl-nav
+      //display: none
+
+  .b-index-line_header_slider
+    padding-left: 80px
+
+  .b-btn_slider
+    margin-left: 80px
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -56,7 +75,7 @@
 
   .number-item_order-2
     .number-item__value
-      right: -3px
+      right: -40px
 
   .media_full_width
     padding-left: 0
@@ -188,6 +207,12 @@
     width: auto
     min-width: 100%
 
+  .b-nav-item:before
+    top: -55px
+
+  .nav-item_not_index:before
+    top: 0
+
 
 
 @media only screen and (max-width : 850px)
@@ -290,8 +315,6 @@
   .copy__block
     order: 4
     justify-content: flex-start
-    //flex-direction: row
-    //align-content: flex-end
 
   .copy_block__organisation
     margin-top: 0
@@ -362,6 +385,37 @@
     opacity:  1 !important
     right: 0 !important
 
+  .b-header__logo
+    width: 50%
+
+  .b-link-header
+    width: 50%
+    margin: 0
+    margin-top: 25px
+
+  .b-index-line_header_slider
+    padding-left: 0px
+
+  .b-btn_slider
+    margin-left: 0px
+
+  .current-news-item_title
+    margin-top: 0
+
+  .b-slider_footer
+    .owl-nav
+      display: block
+      .owl-prev
+        left: 5px
+      .owl-next
+        right: 5px
+
+  .b-description-for-header-logo
+    margin-left: 0
+
+  .b-content-footer-slider
+    padding-top: 40px
+
 @media only screen and (max-width : 640px)
   .nav-item_not_index
     width: 100%
@@ -384,6 +438,9 @@
 
   .row-news-item
     width: 100%
+
+  .b-content-footer-slider
+    padding-left: 15px
 
 
 @media only screen and (max-width : 500px)
@@ -521,6 +578,32 @@
 
   .window__price
     font-size: 17pt !important
+
+  .b-slider_footer
+    .owl-nav
+      display: none
+
+  textarea#comment
+    width: 100% !important
+
+  .b-footer-content-index
+    padding-left: 0
+    padding-right: 0
+
+  .number-item_order-2 .number-item__value
+    right: 0
+    text-align: center
+
+  .number-item_order-3 .number-item__value
+    right: -12px
+    text-align: center
+
+  .b-index-line_header_slider
+    padding-top: 50px
+    padding-left: 15px
+
+  .b-btn_slider
+    margin-left: 15px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

@@ -53,11 +53,11 @@
 
 	<!-- Custom Browsers Color Start -->
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#4a84f0">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#4a84f0">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#4a84f0">
 	<!-- Custom Browsers Color End -->
 
 </head>
@@ -67,6 +67,7 @@
 <header class="b-header">
 	<div class="b-header__logo">
 		<a href="/"><img src="img/logo.png" alt=""></a>
+		<div class="b-description-for-header-logo">Завод пластиковых окон</div>
 	</div>
 
 	<div class="b-link-header link_sample">
@@ -78,7 +79,7 @@
 
 	<div class="b-link-header link_calculate">
 		<div class="link__icon icon-2"></div>
-		<a href="#" class="link link_header ">
+		<a href="#b-calcul-form" class="link link_header popup">
 			Рассчитать стоимость
 		</a>
 	</div>
@@ -93,10 +94,10 @@
 </header>
 
 <div class="b-index-line b-index-line_fullWidth">
-	<div class="b-slider owl-carousel">
+	<div class="b-slider owl-carousel b-slider_indexHeader">
 		<div class="b-slider-item" style="background-image: url(img/banner2.jpg);">
-			<div class="b-index-line">
-				<div class="b-slider__text">
+			<div class="b-index-line ">
+				<div class="b-slider__text b-index-line_header_slider">
 					Термоокна по цене обычных
 					окон. Климат-контроль в
 					каждом окне!
@@ -107,8 +108,8 @@
 			</div>
 		</div>
 		<div class="b-slider-item" style="background-image: url(img/banner2.jpg);">
-			<div class="b-index-line">
-				<div class="b-slider__text">
+			<div class="b-index-line ">
+				<div class="b-slider__text b-index-line_header_slider">
 					Термоокна по цене обычных
 					окон. Климат-контроль в
 					каждом окне!
@@ -235,9 +236,7 @@
 					СЕРВИС
 				</div>
 			</div>
-		</div>
 
-		<div class="b-row-list-service">
 			<div class="item__service">
 				<div class="service__text">
 					<div class="service__icon icon-12"></div>
@@ -263,65 +262,98 @@
 	</div>
 </div>
 
+
 <div class="b-index-line">
-	<div class="b-popular-solutions">
-		<div class="b-index-line__caption">
-			популярные решения
-		</div>
-		<div class="container">
-			<div class="row">
+	<div class="b-index-line__caption">
+		популярные решения
+	</div>
+	<div class="b-popular-solutions b-popular-solutions_flex">
 
-				<div class="col-lg-4 col-md-12">
-					<p class="decision-text-header">Двухстворчатое окно</p>
-					<div class="decision-1">
-						<div class="decision-text">
-							<p class="price">Цена от</p>
-							<p class="sum">11 500 P</p>
-							<p class="size">Размер 1300x1400 мм</p>
-							<input type="checkbox" id="payt1">
-							<label for="payt1"></label>
-						</div>
-						<div class="decision-bottom-color"></div>
-					</div>
+		<div class="popular-solutions__item">
+			<div class="b-solutions-item__title">
+				Двухстворчатое окно
+			</div>
+			<div class="solutions-item-card">
+				<div class="solutions-item-card__image">
+					<img src="img/1.jpg" alt="">
 				</div>
-
-				<div class="col-lg-4 col-md-12">
-					<p class="decision-text-header">Трёхстворчатое окно</p>
-					<div class="decision-2">
-						<div class="decision-text">
-							<p class="price">Цена от</p>
-							<p class="sum">14 500 P</p>
-							<p class="size">Размер 1800x1400 мм</p>
-							<input type="checkbox" id="payt2">
-							<label for="payt2"></label>
-						</div>
-						<div class="decision-bottom-color"></div>
+				<div class="solutions-item-card-description item-card_forIndex decision-1">
+					<div class="solutions-item-card__price">
+						Цена от
+						<span>11 500 Р</span>
 					</div>
-				</div>
-
-				<div class="col-lg-4 col-md-12">
-					<p class="decision-text-header">Балконный блок</p>
-					<div class="decision-3">
-						<div class="decision-text">
-							<p class="price">Цена от</p>
-							<p class="sum">14 500 P</p>
-							<p class="size">Размер 1800x1400 мм</p>
-							<input type="checkbox" id="payt3">
-							<label for="payt3"></label>
-						</div>
-						<div class="decision-bottom-color"></div>
+					<div class="solutions-item-card__size">
+						Размер 1000x1400 мм
 					</div>
+					<!--<div class="b-checkbox-popular">-->
+						<!--<input type="checkbox" id="payt1">-->
+						<!--<label for="payt1"></label>-->
+					<!--</div>-->
 				</div>
-
 			</div>
 		</div>
-		<a href="#b-ApplicationForPlasticWindows" class="popup decision-button btn_link">
-			заказать
-		</a>
+
+		<div class="popular-solutions__item">
+			<div class="b-solutions-item__title">
+				Трехстворчатое окно
+			</div>
+			<div class="solutions-item-card">
+				<div class="solutions-item-card__image">
+					<img src="img/2.jpg" alt="">
+				</div>
+				<div class="solutions-item-card-description item-card_forIndex decision-2">
+					<div class="solutions-item-card__price">
+						Цена от
+						<span>15 980 Р</span>
+					</div>
+					<div class="solutions-item-card__size">
+						Размер 1300x1400 мм
+					</div>
+					<!--<div class="b-checkbox-popular">-->
+						<!--<input type="checkbox" id="payt2">-->
+						<!--<label for="payt2"></label>-->
+					<!--</div>-->
+				</div>
+			</div>
+		</div>
+
+		<div class="popular-solutions__item">
+			<div class="b-solutions-item__title">
+				Балконный блок
+			</div>
+			<div class="solutions-item-card">
+				<div class="solutions-item-card__image">
+					<img src="img/3.jpg" alt="">
+				</div>
+				<div class="solutions-item-card-description  item-card_forIndex decision-3">
+					<div class="solutions-item-card__price">
+						Цена от
+						<span>25 500 Р</span>
+					</div>
+					<div class="solutions-item-card__size">
+						Размер 1300x1900 мм
+					</div>
+					<!--<div class="b-checkbox-popular">-->
+						<!--<input type="checkbox" id="payt3">-->
+						<!--<label for="payt3"></label>-->
+					<!--</div>-->
+				</div>
+			</div>
+		</div>
 	</div>
+	<a href="#b-ApplicationForPlasticWindows" class="popup btn_CardForIndex"
+	   data-windowName="Двухстворчатое окно"
+	   data-windowPrice="11 500 Р"
+	   data-windowSize="1000x1400 мм"
+	   data-windowImg="img/1.jpg"
+	>
+		<span class="b-btn btn-blue  js-window-popup">
+			ЗАКАЗАТЬ
+		</span>
+	</a>
 </div>
 
-<div class="b-index-line">
+<div class="b-index-line media_full_width">
 	<div class="b-credit">
 		<div class="b-credit-line">
 			<div class="b-credit__caption">
@@ -366,7 +398,7 @@
 	</div>
 </div>
 
-<div class="b-index-line">
+<div class="b-index-line media_full_width">
 	<div class="b-work">
 		<div class="b-index-line__caption">
 			СХЕМА РАБОТЫ
@@ -442,7 +474,7 @@
 			<div class="number-item__value">
 				<span class="counter-up">9999</span>
 				<div class="number-item__description ">
-					утсановленых окон
+					установленых окон
 				</div>
 			</div>
 		</div>
@@ -512,25 +544,10 @@
 				</div>
 			</div>
 
-		</div>
-
-		<div class="b-advantages-line">
-
-			<div class="advantages-item">
-				<div class="advantages-item__icon icon-15"></div>
-				<div class="advantages-item__title">
-					Собственное производство
-				</div>
-				<div class="advantages-item__description">
-					Вы получаете окна от производителя с завода,
-					оснащенного лучшим автоматизированным оборудованием.
-				</div>
-			</div>
-
 			<div class="advantages-item">
 				<div class="advantages-item__icon icon-16"></div>
 				<div class="advantages-item__title">
-					Сертифицированные комплектующие
+					Любая конфигурация
 				</div>
 				<div class="advantages-item__description">
 					Вы получаете окна от производителя с завода,
@@ -539,9 +556,9 @@
 			</div>
 
 			<div class="advantages-item">
-				<div class="advantages-item__icon icon-11"></div>
+				<div class="advantages-item__icon icon-10"></div>
 				<div class="advantages-item__title">
-					Оперативный монтаж
+					Большой ассортимент
 				</div>
 				<div class="advantages-item__description">
 					Вы получаете окна от производителя с завода,
@@ -550,9 +567,9 @@
 			</div>
 
 			<div class="advantages-item">
-				<div class="advantages-item__icon icon-17"></div>
+				<div class="advantages-item__icon icon-22"></div>
 				<div class="advantages-item__title">
-					Гарантия качества
+					Минимальный срок производства
 				</div>
 				<div class="advantages-item__description">
 					Вы получаете окна от производителя с завода,
@@ -561,9 +578,20 @@
 			</div>
 
 			<div class="advantages-item">
-				<div class="advantages-item__icon icon-18"></div>
+				<div class="advantages-item__icon icon-23"></div>
 				<div class="advantages-item__title">
-					Доступные цены
+					Гибкая система скидок
+				</div>
+				<div class="advantages-item__description">
+					Вы получаете окна от производителя с завода,
+					оснащенного лучшим автоматизированным оборудованием.
+				</div>
+			</div>
+
+			<div class="advantages-item">
+				<div class="advantages-item__icon icon-24"></div>
+				<div class="advantages-item__title">
+					Полный спектр услуг
 				</div>
 				<div class="advantages-item__description">
 					Вы получаете окна от производителя с завода,
@@ -673,7 +701,7 @@
 	</div>
 </div>
 
-<div class="b-index-line">
+<div class="b-index-line b-footer-content-index">
 	<div class="b-slider-mit-form">
 		<div class="b-index-line__caption caption_slider-footer">
 			НАШИ СОТРУДНИКИ
@@ -681,9 +709,9 @@
 		<div class="b-slider b-slider_footer owl-carousel">
 
 			<div class="b-slider-item b-slider-item_footer" style="background-image: url(img/bgi_footer_slider.png);">
-				<div class="b-content-footer-slider" style="background-image: url(img/personal.png);">
+				<div class="b-content-footer-slider" style="background-image: url(img/buAnastas.png);">
 					<div class="footer-slider__name">
-						Ольга
+						Бучинскас Анастасия
 					</div>
 					<div class="footer-slider__profession">
 						Менеджер-консультант
@@ -692,9 +720,53 @@
 			</div>
 
 			<div class="b-slider-item b-slider-item_footer" style="background-image: url(img/bgi_footer_slider.png);">
-				<div class="b-content-footer-slider" style="background-image: url(img/personal.png);">
+				<div class="b-content-footer-slider" style="background-image: url(img/KlimpEcat.png);">
 					<div class="footer-slider__name">
-						Ольга
+						Климова Екатерина
+					</div>
+					<div class="footer-slider__profession">
+						Менеджер-консультант
+					</div>
+				</div>
+			</div>
+
+			<div class="b-slider-item b-slider-item_footer" style="background-image: url(img/bgi_footer_slider.png);">
+				<div class="b-content-footer-slider" style="background-image: url(img/krasovSvetl.png);">
+					<div class="footer-slider__name">
+						Красовская Светлана
+					</div>
+					<div class="footer-slider__profession">
+						Менеджер-консультант
+					</div>
+				</div>
+			</div>
+
+			<div class="b-slider-item b-slider-item_footer" style="background-image: url(img/bgi_footer_slider.png);">
+				<div class="b-content-footer-slider" style="background-image: url(img/numova.png);">
+					<div class="footer-slider__name">
+						Наумова Ирина
+					</div>
+					<div class="footer-slider__profession">
+						Менеджер-консультант
+					</div>
+				</div>
+			</div>
+
+			<div class="b-slider-item b-slider-item_footer" style="background-image: url(img/bgi_footer_slider.png);">
+				<div class="b-content-footer-slider" style="background-image: url(img/schevchuk.png);">
+					<div class="footer-slider__name">
+						Шевчук Алёна
+					</div>
+					<div class="footer-slider__profession">
+						Менеджер-консультант
+					</div>
+				</div>
+			</div>
+
+			<div class="b-slider-item b-slider-item_footer" style="background-image: url(img/bgi_footer_slider.png);">
+				<div class="b-content-footer-slider" style="background-image: url(img/schutko.png);">
+					<div class="footer-slider__name">
+						Шутько Кристина
 					</div>
 					<div class="footer-slider__profession">
 						Менеджер-консультант
@@ -723,7 +795,7 @@
 
 			<div class="line-form-footer">
 				<label for="time">Время</label>
-				<input type="time" class="name" id="time" >
+				<input type="time" value="00:00" class="name" id="time" >
 			</div>
 
 			<div class="line-form-footer">
@@ -756,7 +828,7 @@
 
 		<div class="b-link-header link_calculate b-link-header_footer">
 			<div class="link__icon icon-2"></div>
-			<a href="#" class="link link_header ">
+			<a href="#b-calcul-form" class="link link_header popup ">
 				Рассчитать стоимость
 			</a>
 		</div>
@@ -775,8 +847,7 @@
 
 			<div class="footer-nav-column copy__block">
 				<div class="copy_block__organisation">
-					© 2016 "МКМ строй" - г. Череповец,
-					Волоколамское шоссе, д.73
+					© 2016 "МКМ строй" - Вологодская область, г. Череповец, ул.Держинского, д.49, офис 1
 				</div>
 				<div class="copy_block__webest">
 						<div class="text">разработка</div>
@@ -834,6 +905,7 @@
 				</ul>
 			</div>
 
+
 			<div class="footer-nav-column ">
 				<div class="footer-nav__caption">
 					УСЛУГИ
@@ -841,32 +913,32 @@
 				<ul class="footer-nav-list">
 					<li>
 						<a href="#">
-							Раздвижные двери
+							Установка окон
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Пластиковые двери
+							Остекление балконов
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Перегородки
+							Сервисная служба
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Противопожарные перегородки
+							Вызов Замерщика
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Сетки
+							Вывоз мусора
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Фурнитура
+							Отделка
 						</a>
 					</li>
 				</ul>
@@ -879,44 +951,25 @@
 				<ul class="footer-nav-list">
 					<li>
 						<a href="#">
-							Пластиковые окна
+							О компании
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Стеклопакеты
+							Новости и акции
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Раздвижные двери
+							Вакансии
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							Пластиковые двери
+							Дилерам
 						</a>
 					</li>
-					<li>
-						<a href="#">
-							Перегородки
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Противопожарные перегородки
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Сетки
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Фурнитура
-						</a>
-					</li>
+
 				</ul>
 			</div>
 
@@ -927,6 +980,40 @@
 
 
 <div class="b-hidden">
+
+	<form class="b-popup" id="b-calcul-form">
+		<div class="b-popup-white ">
+			<div class="popup__caption">
+				Рассчитать стоимость
+			</div>
+			<div class="feed-back-form__description b-popup_description">
+				Заполните данные:
+			</div>
+			<div class="line-form-footer">
+				<label for="calcul-form-name" class="popup__label">Имя</label>
+				<input type="text" class="name popup__input" id="calcul-form-name">
+			</div>
+
+			<div class="line-form-footer">
+				<label for="phone-calcul-form-name" class="popup__label">Телефон</label>
+				<input type="text" id="phone-calcul-form-name" class="name popup__input popup_phone_input"placeholder="+7 (___) ___-__-__">
+			</div>
+
+			<div class="line-form-footer">
+				<label for="calcul-form-time" class="popup__label">Время</label>
+				<input type="time" value="00:00" class="name popup__input" id="calcul-form-time" >
+			</div>
+		</div>
+		<div class="b-popup-dark">
+			<div class="line-form-footer">
+				<textarea name="comment" class="popup__texarea" placeholder="Комментарий"></textarea>
+			</div>
+
+			<div class="b-btn b-btn_w145 btn_dark_blue btn_center" type="submit">
+				ОТПРАВИТЬ
+			</div>
+		</div>
+	</form>
 
 	<div class="b-popup popup_width693" id="b-contact-map">
 		<div class="b-popup-white b-popup-white_map">
@@ -957,11 +1044,11 @@
 				ЗАЯВКА НА БЕСПЛАТНЫЙ ЗАМЕР
 			</div>
 			<div class="feed-back-form__description b-popup_description">
-				Задайте вопрос нашему менеджеру:
+				Заполните данные:
 			</div>
 			<div class="line-form-footer">
-				<label for="name" class="popup__label">Имя</label>
-				<input type="text" class="name popup__input" id="name">
+				<label for="measurement-name" class="popup__label">Имя</label>
+				<input type="text" class="name popup__input" id="measurement-name">
 			</div>
 
 			<div class="line-form-footer">
@@ -970,8 +1057,8 @@
 			</div>
 
 			<div class="line-form-footer">
-				<label for="time" class="popup__label">Время</label>
-				<input type="time" value="00:00" class="name popup__input" id="time" >
+				<label for="measurement-time" class="popup__label">Время</label>
+				<input type="time" value="00:00" class="name popup__input" id="measurement-time" >
 			</div>
 		</div>
 		<div class="b-popup-dark">
@@ -995,13 +1082,13 @@
 				Заполните данные:
 			</div>
 			<div class="line-form-footer">
-				<label for="name" class="popup__label">Имя</label>
-				<input type="text" class="name popup__input" id="name">
+				<label for="ApplicationForPlasticWindows-name" class="popup__label">Имя</label>
+				<input type="text" class="name popup__input" id="ApplicationForPlasticWindows-name">
 			</div>
 
 			<div class="line-form-footer">
-				<label for="PhoneApplic" class="popup__label">Телефон</label>
-				<input type="text"  id="PhoneApplic" class="name popup__input popup_phone_input"placeholder="+7 (___) ___-__-__">
+				<label for="ApplicationForPlasticWindows-phone" class="popup__label">Телефон</label>
+				<input type="text"  id="ApplicationForPlasticWindows-phone" class="name popup__input popup_phone_input"placeholder="+7 (___) ___-__-__">
 			</div>
 		</div>
 		<div class="b-popup-dark">
@@ -1038,13 +1125,13 @@
 				Заполните данные:
 			</div>
 			<div class="line-form-footer">
-				<label for="name" class="popup__label">Имя</label>
-				<input type="text" class="input_order-window" id="name">
+				<label for="order-window-name" class="popup__label">Имя</label>
+				<input type="text" class="input_order-window" id="order-window-name">
 			</div>
 
 			<div class="line-form-footer">
-				<label for="PhoneApplic" class="popup__label">Телефон</label>
-				<input type="text" id="PhoneApplic" class="name input_order-window popup_phone_input"
+				<label for="order-window-Applic" class="popup__label">Телефон</label>
+				<input type="text" id="order-window-Applic" class="name input_order-window popup_phone_input"
 					   placeholder="+7 (___) ___-__-__">
 			</div>
 			<div class="b-btn b-btn_w145 btn_dark_blue" type="submit" style="margin-left: auto;">

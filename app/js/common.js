@@ -28,9 +28,9 @@ $(function () {
 
     $('.counter-up').counterUp({time: 2000,});
 
-    $("#phone").inputmask("+7 (999) 99-99-999");
+    $("#phone").inputmask("+7 (999) 999-99-99");
 
-    $(".popup_phone_input").inputmask("+7 (999) 99-99-999");
+    $(".popup_phone_input").inputmask("+7 (999) 999-99-99");
 
 
     $('.advantages-item').click(function () {
@@ -100,8 +100,8 @@ $(function () {
     function scroollyFeedBackForm() {
 
         if ($(window).width() > 1200) {
-            $("#FeedBackForm").removeClass("removeFix");
-            $("#stickem-container").removeClass("removeFixContainer");
+            // $("#FeedBackForm").removeClass("removeFix");
+            // $("#stickem-container").removeClass("removeFixContainer");
             $('#FeedBackForm').scroolly([
                 {
                     to: 'con-top',
